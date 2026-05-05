@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <fieldset id="container">
+            <form name="calculator">
+                <input id="display" type="text" name="display" readonly>
+                <input type="button" value="1" onclick="addValue(this)">
+                <input type="button" value="2" onclick="addValue(this)">
+                <input type="button" value="3" onclick="addValue(this)">
+                <input type="button" data-type="operators" value="+" onclick="addValue(this)">
+                <br />
+                <input type="button" value="4" onclick="addValue(this)">
+                <input type="button" value="5" onclick="addValue(this)">
+                <input type="button" value="6" onclick="addValue(this)">
+                <input type="button" data-type="operators" value="-" onclick="addValue(this)">
+                <br />
+                <input type="button" value="7" onclick="addValue(this)">
+                <input type="button" value="8" onclick="addValue(this)">
+                <input type="button" value="9" onclick="addValue(this)">
+                <input type="button" data-type="operators" value="*" onclick="addValue(this)">
+                <br />
+                <input type="button" value="C" id="clearBtn">
+                <input type="button" value="0" onclick="addValue(this)">
+                <input type="button" value="=" id="calcBtn">
+                <input type="button" data-type="operators" value="/" onclick="addValue(this)">
+            </form>
+        </fieldset>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
